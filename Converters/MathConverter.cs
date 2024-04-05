@@ -11,7 +11,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Markup;
 
-namespace Client.Converters
+namespace Multfinite.Utilities.WPF.Converters
 {
     /// <summary>
     /// Value converter that performs arithmetic calculations over its argument(s)

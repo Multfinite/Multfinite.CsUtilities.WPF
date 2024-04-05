@@ -9,7 +9,10 @@ namespace Multfinite.Utilities.WPF
 	{
 		public event PropertyChangedEventHandler PropertyChanged;
 		public void RaisePropertyChanged([CallerMemberName] string propertyName = "") => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+	}
 
+	public abstract class Context : ContextBase
+	{
 		public Dispatcher Dispatcher { get; } = Dispatcher.CurrentDispatcher;
 
 		public void InvokeByDispatcher(Delegate del, DispatcherPriority priority = DispatcherPriority.Normal) => Dispatcher.Invoke(priority, del);

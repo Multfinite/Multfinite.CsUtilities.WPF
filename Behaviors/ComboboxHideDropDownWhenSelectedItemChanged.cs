@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xaml.Behaviors;
 using System.Windows.Controls;
 
-namespace Client.Behaviours
+namespace Multfinite.Utilities.WPF.Behaviors
 {
 	public class ComboboxHideDropDownWhenSelectedItemChanged : Behavior<ComboBox>
     {
