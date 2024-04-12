@@ -11,7 +11,7 @@ namespace Multfinite.Utilities.WPF.Converters
         {
             ResourceDictionary dictionary = (ResourceDictionary) parameter;
             if(value != null) if (dictionary.Contains(value)) return dictionary[value];
-            return null;
+            return value;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
